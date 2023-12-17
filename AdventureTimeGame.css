@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+    font-family: fantasy Luminari;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: fantasy Luminari;
+    background: linear-gradient(#60d6fe, #9ae346);
+}
+
+.Main_container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Welcome */
+
+.WelcomeStyle {
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    font-size: 2.2vw;
+    text-align: center;
+    padding: 2.2vh;
+    border: solid black 0.38vh;
+    border-radius: 7vh;
+    background: linear-gradient(#60d6fe, #9ae346);
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Game */
+
+.CharacterGame {
+    margin-top: 6vh;
+    height: inherit;
+    background: url(Game_Background.jpg) no-repeat center;/*<!--Source - https://wallup.net/adventure-time-28/-->//*/
+    background-size: cover;
+    width: 100%;
+    border: solid black 0.42vh;
+    border-radius: 5vh;
+}
+
+.GameHeader {
+    padding-top: 3vh;
+}
+
+.GameHeader h1{
+    display:flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 30%;
+    background: linear-gradient(#60d6fe, #9ae346);
+    border: solid black 0.2vh;
+    padding: 1.8vh;
+    border-radius: 4vh;
+    font-size: 1.8vw;
+}
+
+.GameHeader p{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 5vh;
+    margin-left: 10%;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.GameButton {
+    display:flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.GameButton button {
+    font-size: 1.1vw;
+    padding: 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#60d6fe, #9ae346);
+}
+
+#characterBio {
+    display:flex;
+    justify-content: center;
+    height: 30vh;
+    margin-top: 5vh;
+}
+
+.GameBio {
+    height: 40vh;
+    max-height: 42vh;
+    margin-top: 5vh;
+}
+
+#character-info {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38vh;
+    max-height: 40vh;
+    margin-top: 5vh;
+    background: linear-gradient(#a2f349, #638a1f);
+    border: solid black 0.2vh;
+    border-radius: 4vh;
+}
+
+.GameRow {
+    display: flex;
+    height: 100%;
+}
+
+.GameCol {
+    flex: 50%;
+    height: 100%;
+}
+
+#character-info h2{
+    display:flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 1.5vh;
+    margin-left: 20%;
+    font-size: 1.5vw;
+    padding: 2vh 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+}
+
+#character-info p{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 1.5vh;
+    margin-left: 10%;
+    font-size: 1.1vw;
+    padding: 2vh 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+}
+
+#character-info img{
+    height: 34vh;
+    width: 80%;
+    margin-top: 1.8vh;
+    object-fit: contain;
+    padding: 0.1vh 0.1vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+}
+
+.GameRelatedWebRow {
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5vh;
+    background: url(Menu_Background.jpg) no-repeat center;/*<!--Source - https://wallup.net/adventure-time-28/-->//*/
+    background-size: cover;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 0.42vh;
+    border-radius: 5vh;
+}
+
+.GameRelatedWebCol {
+    flex: 50%;
+}
+
+/* menu */
+
+.MenuHeader h1 {
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2.5vh;
+    margin-left: 25%;
+    background: linear-gradient(#93af36, #3a97c6);
+    border: solid black 0.2vh;
+    padding: 1.8vh;
+    border-radius: 4vh;
+    font-size: 1.5vw;
+}
+
+.MenuHeader p{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5vh;
+    margin-left: 10%;
+    font-size: 1.1vw;
+    padding: 2vh 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#93af36, #3a97c6);
+}
+
+.MenuButton button {
+    display:flex;
+    justify-content: center;
+    font-size: 1.1vw;
+    width: 50%;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    margin-left: 25%;
+    padding: 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#93af36, #3a97c6);
+}
+
+#menu {
+    height: 10vh;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#menu a{
+    padding: 2vh 3vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#93af36, #3a97c6);
+}
+
+.MenuLink1 {
+
+}
+
+.MenuLink2 {
+
+}
+
+#myImg {
+    object-fit: contain;
+    max-height: 60vh;
+    width: 90%;
+}
+
+/* Website Ratings */
+
+.WebsiteRating {
+    background: url(Game_Background.jpg) no-repeat center;/*<!--Source - https://wallup.net/adventure-time-28/-->//*/
+    background-size: cover;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 0.42vh;
+    border-radius: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: inherit;
+}
+
+.RatingHeader h1{
+    display:flex;
+    justify-content: center;
+    width: 40%;
+    margin-top: 2vh;
+    margin-left: 30%;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+    border: solid black 0.2vh;
+    padding: 1.3vh;
+    border-radius: 4vh;
+    font-size: 1.5vw;
+}
+
+.RatingHeader p {
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    padding: 1.2vh;
+    margin-top: 2vh;
+    margin-left: 25%;
+    font-size: 1.1vw;
+    font-weight: bold;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+}
+
+.FavouriteCharacterInput {
+    height: 12vh;
+    display:flex;
+    justify-content: center;
+}
+
+.FavouriteCharacterInput input{
+    height: 6vh;
+    font-size: 1vw;
+    padding-left: 1.2vh;
+    margin-top: 3vh;
+    width: 50%;
+    border-radius: 5vh;
+}
+
+.FavouriteCharacterInput button{
+    height: 6vh;
+    font-size: 1vw;
+    margin-left: 1vh;
+    margin-top: 3vh;
+    width: 15%;
+    border-radius: 5vh;
+}
+
+.CompareButton {
+    display:flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.CompareButton button {
+    font-size: 1.1vw;
+    padding: 2vh;
+    border-radius: 4vh;
+    border: solid black 0.2vh;
+    background: linear-gradient(#60d6fe, #9ae346);
+}
+
+
+#displayArea {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    height: 6vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 5vh;
+    border: solid black 0.2vh;
+    padding: 2.3vh;
+    background: linear-gradient(#60d6fe, #fdfdfe);
+}
+
+.Characterh3 {
+    font-size: 1.2vw;
+    font-weight: normal;
+    color: #000000;
+    float: left;
+    margin-right: 1vh;
+}
+
+.WebRating {
+    display:flex;
+    justify-content: center;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    height: 10vh;
+    font-size: 1.5vw;
+}
+
+.WebRating button{
+    height: 6vh;
+    font-size: 1vw;
+    margin-left: 2vh;
+    margin-top: 2.5vh;
+    width: 15%;
+    border-radius: 5vh;
+}
+
+.WebRating input{
+}
+
+/* Style the footer */
+#FooterAdventure {
+    height: 16vh;
+    width: 100%;
+    background: linear-gradient(#029ac3, #59a694);
+}
+
+.FooterMainContainer {
+    display: flex;
+    overflow: hidden;
+}
+
+.FooterLeft {
+    flex: 33.3%;
+}
+
+.FooterLogo {
+    float:right;
+    margin-top:auto;
+    height: 15vh;
+    max-height: 16vh;
+    min-height: 10vh;
+}
+
+.FooterCenter {
+    flex: 33.3%;
+}
+
+.FooterCenter h2 {
+    text-align: center;
+    font-size:2vw ;
+    padding: 1.7vh;
+    color: #e7e4bd;
+}
+
+.ContactInfo {
+    float: left;
+    margin-left: 4vh;
+}
+
+.ContactInfo p {
+    float: left;
+}
+.ContactInfo i {
+    float: left;
+    font-size:1.5vw;
+    color: #e7e4bd;
+    padding-right: 1vh;
+}
+.ContactEmail {
+    float: right;
+    margin-right: 4vh;
+}
+
+.ContactEmail p {
+    float: right;
+}
+.ContactEmail i {
+    float: left;
+    font-size:1.5vw;
+    color: #e7e4bd;
+    padding-right: 1vh;
+}
+.FooterCenter p {
+    font-size: 1.2vw ;
+    padding: .1vh;
+    color: #e7e4bd;
+}
+
+.FooterCenter p a {
+    text-decoration: none;
+    color: #e7e4bd;
+}
+
+.FooterCenter .number {
+}
+
+.FooterCenter .email {
+}
+
+.FooterRight {
+    flex: 33.3%;
+}
+
+
+.FooterButton {
+    display: block;
+    overflow: hidden;
+}
+
+.FooterButton a {
+    float: left;
+    text-decoration: none;
+    padding: 2.5vh;
+    margin-top: 5vh;
+    margin-left: 1vh;
+    color: #eb0d0d;
+    font-weight: bold;
+    background-color: #e7e4bd;
+    border-radius: 5vh;
+}

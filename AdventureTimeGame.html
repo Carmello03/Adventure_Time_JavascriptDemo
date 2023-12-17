@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AdventureTimeCompetition</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Tadhg Carmody">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="AdventureTimeGame.css">
+        <link rel="javascript" href="AdventureTimeGame.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <main>
+            <header class="Main_container">
+                <div class="welcome">
+                    <h1 class="WelcomeStyle">Welcome the Adventure time Game Page</h1>
+                </div>
+            </header>
+            <div class="Main_container">
+                <div class="CharacterGame">
+                    <div class="GameHeader">
+                        <h1>Character Selector Game</h1>
+                        <p>Click the button bellow to read about a random character</p>
+                    </div>
+                    <div class="GameButton">
+                        <button onclick="gameSelect()">Select a Character</button>
+                    </div>
+                    <div class="GameBio">
+                        <div id="character-info" style="display: none;">
+                            <div class="GameRow">
+                                <div class="GameCol">
+                                    <h2 id="character-name"></h2>
+                                    <p id="character-bio"></p>
+                                </div>
+                                <div class="GameCol">
+                                    <img id="character-image" src="" alt="random character img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="GameRelatedWebRow">
+                    <div class="GameRelatedWebCol">
+                        <div class="MenuButton">
+                            <div class="MenuHeader">
+                                <h1>Adventure Time Details</h1>
+                                <p>Pendleton Ward founded the American animated television series Adventure Time for Cartoon Network.
+                                    A human kid named Finn (voiced by Jeremy Shada) and his best friend and adopted brother Jake (John DiMaggio),
+                                    a dog with magical abilities to change shape and grow and shrink at will,
+                                    are the stars of the first season of Adventure Time (2010–2018). In the post-apocalyptic Land of Ooo,
+                                    Finn and Jake reside. Each Adventure Time episode is about eleven minutes in length;
+                                    pairs of episodes are often telecast in order to fill a half-hour program time slot.[</p>
+                                <button onclick="showMenu()">Menu</button>
+                                <div id="menu" style="display:none">
+                                    <a class="MenuLink1" href="https://atf.fandom.com/wiki/Adventure_Time_Fanon_Wiki"> Fan Wiki </a>
+                                    <a class="MenuLink2" href="https://en.wikipedia.org/wiki/List_of_Adventure_Time_episodes"> List of Every Episode </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="GameRelatedWebCol">
+                        <div class="ImageChanger">
+                            <div class="ImageRow">
+                                <div class="ImageCol">
+                                    <img id="myImg" src="JakeFinnOrginal.png" alt="Jake and finn image" onmouseover="changeImg()" onmouseout="revertImg()">
+                                </div>
+                                <div class="ImageCol">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="WebsiteRating">
+                    <div class="RatingHeader">
+                        <h1>Fan Website Review</h1>
+                        <p>Enter bellow Your Favourite Character</p>
+                    </div>
+                    <div class="FavouriteCharacter">
+                        <div class="FavouriteCharacterInput">
+                            <input type="text" id="characterInput" placeholder="Enter your favourite character from Adventure Time">
+                            <button onclick="displayCharacter()">Submit</button>
+                        </div>
+                        <p id="displayArea" style="display: none;"></p>
+                    </div>
+                    <div class="CompareButton">
+                        <button onclick="compareCharacters()" >Compare Button</button>
+                    </div>
+                    <div class="RatingHeader">
+                        <p>Enter bellow Your Rating for the Site</p>
+                    </div>
+                    <div class="WebRating">
+                        <input id="WebsiteRating" type="range" min="0" max="10" step="1">
+                        <button onclick="rateWebsite()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="FooterAdventure">
+            <div class="FooterMainContainer">
+                <div class="FooterLeft">
+                    <img class="FooterLogo" src="JakeandFinn.png" alt="Adventure Time Logo"><!--Source - https://www.nicepng.com/ourpic/u2w7u2e6u2w7w7w7_adventure-time-with-finn-jake-adventure-time-with/-->
+                </div>
+                <div class="FooterCenter">
+                    <h2>Contact: Made by Tadhg Carmody</h2>
+                    <div class="ContactInfo">
+                        <i class="fa fa-phone"></i>
+                        <p>+353 066 4546464</p>
+                    </div>
+                    <div class="ContactEmail">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@Adventuretime.ie">support@Adventuretime.ie</a></p>
+                    </div>
+                </div>
+                <div class="FooterRight">
+                    <div class="FooterButton">
+                        <a href="#" class="">Click To Go Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="AdventureTimeGame.js"></script>
+    </body>
+</html>
